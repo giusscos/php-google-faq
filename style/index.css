@@ -23,12 +23,26 @@ img {
 ul {
     list-style: none;
 }
-
+/* Layout */
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 3rem 0.5rem;
+}
 /* Header */
 .main_header {
+    gap: 0.2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.2rem;
+    
+    
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #fff;
     padding: 0.75rem 1.5rem 0;
     border-bottom: 1px solid #bbb;
 }
@@ -99,4 +113,21 @@ ul {
     color: #0058e5;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid currentColor;
+}
+/* Main */
+.main_content{
+    padding: 3rem 0;
+}
+.faq_wrapper > .faq_title{
+    padding: 3rem 0 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.faq_wrapper > .faq_desc{
+    padding: 1rem 0;
+    opacity: 0.6;
+    line-height: 1.5rem;
+}
+.faq_wrapper > .faq_desc > a{
+    color: #0058e5;
 }
