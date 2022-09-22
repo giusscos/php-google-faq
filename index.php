@@ -56,8 +56,14 @@
                 "<a href='#'>Scopri</a> quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.",
             ],
         ],
-    ]
+    ];
 
+    $foot_links = [
+        'Google',
+        'Tutto su Google',
+        'Privacy',
+        'Termini',
+    ];
     ?>
     <header class="main_header">
         <div class="logo_wrapper">
@@ -133,6 +139,32 @@
             </div>
         </section>
     </main>
+    <footer class="main_footer">
+        <div class="container">
+            <div class="footer_list_wrapper">
+                <ul class="list_wrapper">
+                    <?php
+                    foreach ($foot_links as $link) {
+                    ?>
+                    <li>
+                        <a href='#'>
+                            <?= $link ?>
+                        </a>
+                    </li>
+                    <?php
+                    }
+                    ?>
+                </ul>
+            </div>
+            <div class="lang_wrapper">
+                <select>
+                    <option>Italiano</option>
+                    <option>Inglese</option>
+                    <option>Tedesco</option>
+                </select>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
