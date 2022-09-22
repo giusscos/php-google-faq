@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Default rules */
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+select {
+    color: currentColor;
+    border-radius: 0.25rem;
+}
+
+/* Layout */
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 3rem 0.5rem;
+}
+
+/* Header */
+.main_header {
+    gap: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #fff;
+    padding: 0.75rem 1.5rem 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header_link_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header_link_wrapper>.header_link {
+    opacity: 0.6;
+    font-size: 1.3rem;
+}
+
+.account_wrapper {
+    gap: 1rem;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.grid_el {
+    gap: 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dot {
+    background-color: #333;
+    width: 5px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.img_wrapper {
+    width: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img_wrapper>img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main_nav {
+    padding: 1rem 0 0.6rem;
+    flex-basis: 100%;
+}
+
+.main_nav>.nav_list {
+    gap: 2.5rem;
+    display: flex;
+}
+
+.list_item>a {
+    opacity: 0.6;
+}
+
+.list_item>.active {
+    opacity: 1;
+    color: #0058e5;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid currentColor;
+}
+
+/* Main */
+.main_content {
+    padding: 3rem 0;
+}
+
+.faq_wrapper>.faq_title {
+    padding: 3rem 0 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.faq_wrapper>.faq_desc {
+    padding: 1rem 0;
+    opacity: 0.6;
+    line-height: 1.5rem;
+}
+
+.faq_wrapper>.faq_desc>a {
+    color: #0058e5;
+}
+
+/* Footer */
+.main_footer {
+    background-color: #eee;
+}
+
+.main_footer>.container {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer_list_wrapper>.list_wrapper {
+    gap: 0.65rem;
+    opacity: 0.4;
+    display: flex;
+    font-size: 0.75rem;
+}
+
+.lang_wrapper {
+    margin-left: auto;
+}
+
+.lang_wrapper>select {
+    width: 10rem;
+    line-height: 1.5rem;
+}
