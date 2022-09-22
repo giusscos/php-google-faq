@@ -143,6 +143,19 @@ select {
     color: #0058e5;
 }
 
+.faq_wrapper> ol{
+    opacity: 0.6;
+}
+
+.faq_wrapper> ol ol {
+    padding: 1.5rem;
+    list-style: lower-alpha;
+}
+
+.faq_wrapper ol li{
+    padding: 1rem 0;
+}
+
 /* Footer */
 .main_footer {
     background-color: #eee;
